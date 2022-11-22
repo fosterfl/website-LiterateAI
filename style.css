@@ -1,0 +1,580 @@
+body {
+   background-color: #161515;
+   color: #ffffff;
+   height: 100%;
+   font-family: "nobel", /*"Times New Roman",*/ "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   /*font-family:  "Iosevka Fixed Web", /*"nobel", * /"Times New Roman", "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+   letter-spacing: 0.1rem;
+   font-weight: 100;
+   text-align: left;
+   /*font-size: 22pt;*/
+
+ }
+
+ h1, span, a, label, footer, .container {
+
+ }
+
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
+
+ li {
+   float: left;
+ }
+ li a {
+   color: #ffffff;
+   display: block;
+   padding: 8px;
+ }
+ a{
+   color: #ffffff;
+   display: block;
+ }
+ .psw a {
+   color: #161515;
+ }
+
+ a:link {
+   text-decoration: none;
+ }
+
+ a:visited {
+   text-decoration: none;
+ }
+
+ a:hover {
+   text-decoration: underline;
+ }
+
+ a:active {
+   text-decoration: underline;
+ }
+
+ .footer {
+   width: 90%;
+   text-align: right;
+   padding-left: 2vw;
+   padding-right: 2vw;
+   padding-bottom: 2vw;
+   padding-top: 4vw;
+   font-size: smaller;
+ }
+
+ .flex-container {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   padding-left: 20vw;
+   padding-right: 20vw;
+   margin-top: 5vh;
+
+ }
+ .letter {
+   display: flex;
+   flex-direction: row;
+   flex: 1 1 auto;
+   word-wrap: break-word;
+   margin-top: 2vw;
+   margin-bottom: 2vw;
+ }
+ .paragraph {
+   position: absolute;
+ }
+ .sentence {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   position: relative;
+
+ }
+ .baseWord {
+   position: relative;
+   margin-top: 2em;
+   margin-right: 0.3em;
+ }
+ .baseWord2 {
+   position: relative;
+   margin-top: 2em;
+ }
+
+ #warning a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+  background-color: #428972;
+  border-radius: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+  width: 50%;
+  margin-top: 1em;
+
+}
+ /***********************************************************  MOBILE LAYOUT */
+ @media screen and (max-width: 1100px) {
+   body {
+     font-size: 28pt;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+   .flex-container {
+     padding-left: 5vw;
+     padding-right: 5vw;
+   }
+
+   .titlebar {
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+   .slidecontainer {
+     text-align: center;
+     display: table-cell;
+     vertical-align: middle;
+     width: 100%;
+   }
+   .slider {
+     width: 100%;
+     -webkit-appearance: none;
+     height: 50px;
+     border-radius: 25px;
+     background: linear-gradient(-0.25turn, #428973, #7daa4b,#717070, #717070, #de4f10, #dd0008)/*#161515*/;
+     border: solid 1px #8e8e8e;
+     opacity: 1;
+   }
+   .slider::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border: solid 1px #8e8e8e;
+     background: #ffffff/*#161515*/;
+     cursor: pointer;
+   }
+   .slider::-moz-range-thumb {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border: solid 1px #8e8e8e;
+     background: #ffffff/*#161515*/;
+     cursor: pointer;
+   }
+
+   .paragraph {
+     padding-right: 2vw;
+   }
+
+   .footer {
+     display: block;
+   }
+   span.psw {
+       display: block;
+       float: none;
+   }
+   .cancelbtn {
+       width: 100%;
+   }
+
+
+ }
+
+
+
+ @media screen and (min-width: 1100px) {
+   body {
+     font-size: 22pt;
+   }
+
+   .slidecontainer {
+     text-align: right;
+     display: table-cell;
+     vertical-align: middle;
+     width: 60%;
+   }
+
+   .slider {
+     -webkit-appearance: none;
+     width: 30%;
+     height: 15px;
+     border-radius: 25px;
+     background: linear-gradient(-0.25turn, #428973, #7daa4b,#717070, #717070, #de4f10, #dd0008)/*#161515*/;
+     border: solid 1px #8e8e8e;
+     opacity: 1;
+   }
+   .slider::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     border: solid 1px #8e8e8e;
+     background: #ffffff/*#161515*/;
+     cursor: pointer;
+   }
+   .slider::-moz-range-thumb {
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     border: solid 1px #8e8e8e;
+     background: #ffffff/*#161515*/;
+     cursor: pointer;
+   }
+   .paragraph {
+     padding-right: 20vw;
+   }
+
+
+ }
+
+
+ /*********************************  LOGIN and TICKER TOP BAR*/
+ .navbar {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-size: smaller;
+ }
+
+
+ li img {               /*  for non-fa lock icon   */
+   width: 20px;
+   height: 20px;
+   vertical-align: center;
+ }
+ #ticker {            /*  sets ticker width   */
+   width: 20vw;
+ }
+
+
+
+
+ /*********************************  displays MULTI TONE TITLE and SENTIMENT SLIDER on same line*/
+ .titlebar {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 2vw;
+   margin-bottom: 2vw;
+ }
+
+ /*********************************  MULTI TONE TITLE*/
+ #title {
+   display: inline-flex;
+ }
+ #title h1 {
+   margin: 0;
+   font-weight: 200;
+ }
+
+ .h1-alt {
+   color: #b8b8b8;
+   margin: 0;
+   font-weight: 200;
+ }
+
+ /*********************************  SENTIMENT SLIDER */
+
+
+ .slidecontainer label {
+   vertical-align: middle;
+   color: #8e8e8e;
+   font-weight: 200;
+   font-size: smaller;
+ }
+
+ #sentimentSelector {
+   vertical-align: middle;
+ }
+
+ /* The slider itself
+ .slider {
+   -webkit-appearance: none;
+   width: 30%;
+   height: 15px;
+   border-radius: 25px;
+   background: linear-gradient(-0.25turn, #428973, #7daa4b,#717070, #717070, #de4f10, #dd0008)/*#161515* /;
+   border: solid 1px #8e8e8e;
+   opacity: 1;
+ }*/
+
+
+ .slider2::-webkit-slider-thumb {
+   animation: wiggle 0.5s ease;
+   -webkit-animation: wiggle 0.5s ease;
+   animation-iteration-count: 1;
+   -webkit-animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   -webkit-animation-fill-mode: forwards;
+ }
+ .slider2::-moz-range-thumb  {
+   animation: wiggle 0.5s ease;
+   -webkit-animation: wiggle 0.5s ease;
+   animation-iteration-count: 1;
+   -webkit-animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   -webkit-animation-fill-mode: forwards;
+ }
+
+ /*********************************  SENTIMENT SLIDER WIGGLER */
+ @keyframes wiggle {
+   0% { transform: translate(0px, 0px) rotate(0deg); }
+   50% { transform: translate(-15px, 0px) rotate(0deg); }
+   100% { transform: translate(0px, 0px) rotate(0deg); }
+ }
+
+ @-webkit-keyframes wiggle {
+   0% { transform: translate(0px, 0px) rotate(0deg); }
+   50% { transform: translate(-15px, 0px) rotate(0deg); }
+   100% { transform: translate(0px, 0px) rotate(0deg); }
+ }
+
+ /*************************************************  TEXT SPACING */
+#text-container {
+  text-align: justify;
+}
+
+ /*************************************************  WORD COLORS*/
+ .green {
+   background-color: #428972/*#2ab10a*/;
+   border-radius: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   position: relative;
+ }
+ .midGreen {
+   background-color: #7daa4b/*#2ab10a*/;
+   border-radius: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   position: relative;
+ }
+ .neutral {
+   background-color: #717070/*#666666*/;
+   border-radius: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   position: relative;
+ }
+ .orange {
+   background-color: #de4f10/*#a9450a*/;
+   border-radius: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   position: relative;
+ }
+ .midRed {
+   background-color: #a8240a;
+   border-radius: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   position: relative;
+ }
+ .rouge {
+   background-color: #dd0008/*#a90009*/;
+   border-radius: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   position: relative;
+ }
+
+ /*********************************  WORD COLORS FADE IN AND OUT*/
+  @-webkit-keyframes fadeout {
+      0% {opacity:1;}
+      100% {opacity:0;}
+  }
+  @keyframes fadeout {
+      0% {opacity:1;}
+      100% {opacity:0;}
+  }
+
+  .hidden {
+    xdisplay: none;
+    opacity:0;
+    -moz-animation   : fadeout 0.5s linear;
+    -webkit-animation: fadeout 0.5s linear;
+    animation        : fadeout 0.5s linear;
+  }
+
+  .active {
+    opacity:1;
+    -moz-animation   : fadeInOpacity 0.5s linear;
+    -webkit-animation: fadeInOpacity 0.5s linear;
+    animation        : fadeInOpacity 0.5s linear;
+  }
+
+  @keyframes fadeInOpacity {
+  	0% {
+  		opacity: 0;
+  	}
+  	100% {
+  		opacity: 1;
+  	}
+  }
+  @-webkit-keyframes fadeInOpacity {
+      0% {opacity:0;}
+      100% {opacity:1;}
+  }
+
+ /*********************************  MODEL LABEL COLORS*/
+ .adj {
+   color: #c69c1d;
+   position: absolute;
+   top: -20px;
+   right: 0px;
+   font-size: small;
+ }
+ .prnoun, .noun {
+   color: #a92950;
+   position: absolute;
+   font-size: small;
+ }
+ .verb {
+   color: #207c13;
+   position: absolute;
+   top: -20px;
+   right: 0px;
+   font-size: small;
+ }
+
+ /*********************************  LOGIN IN POP UP*/
+ /*assign full width inputs*/
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /*set a style for the buttons*/
+    button {
+        background-color: #161515;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    /* set a hover effect for the button*/
+    button:hover {
+        opacity: 0.8;
+    }
+
+    /*set extra style for the cancel button*/
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+    /*set padding to the container*/
+    .container {
+        padding: 16px;
+        color: #000000;
+    }
+
+    /*set the forgot password text*/
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /*set the Modal background*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+    }
+
+    /*style the model content box*/
+    .modal-content {
+        background-color: #f1f1f1;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /*style the close button*/
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* add zoom animation*/
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+
+/***************************************************** SVG arrows **********/
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  stroke: white;
+}
+
+.animated {
+  fill: none;
+  stroke: white;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+path {
+  marker-end: url(#arrowhead);
+}

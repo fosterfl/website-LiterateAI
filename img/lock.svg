@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 165.11 202.14999"
+   xml:space="preserve"
+   sodipodi:docname="lock.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   width="165.11"
+   height="202.14999"><metadata
+   id="metadata844"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs842" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1466"
+   inkscape:window-height="888"
+   id="namedview840"
+   showgrid="false"
+   inkscape:zoom="2.2266667"
+   inkscape:cx="79.416287"
+   inkscape:cy="97.767186"
+   inkscape:window-x="0"
+   inkscape:window-y="211"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0" />
+<style
+   type="text/css"
+   id="style833">
+	.st0{fill:none;stroke:#FCFCFC;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<g
+   id="Group_2"
+   transform="translate(-931.19,-652.87)">
+	<rect
+   id="Rectangle_7-2"
+   x="931.42999"
+   y="740.96997"
+   class="st0"
+   width="164.64"
+   height="113.62" />
+	<path
+   class="st0"
+   d="m 1076.17,741.55 c -1.11,-48.66 -28.63,-87.68 -62.43,-87.68 -33.79,0 -61.32,38.98 -62.43,87.68 H 932.19 V 854.02 H 1095.3 V 741.55 Z m -62.42,-87.14 c 33.59,0 60.96,38.74 62.06,87.14 h -16.68 c -1.01,-38.57 -20.94,-69.35 -45.39,-69.35 -24.45,0 -44.38,30.76 -45.39,69.35 h -16.67 c 1.12,-48.4 28.48,-87.14 62.07,-87.14 z m 45.1,87.14 h -90.22 c 1.01,-38.33 20.82,-68.93 45.11,-68.93 24.29,0 44.1,30.59 45.11,68.93 z"
+   id="path836"
+   style="stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none" />
+</g>
+</svg>

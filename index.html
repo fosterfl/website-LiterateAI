@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tjr7sng.css">  <!--Nobelcss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <!--script src="./main.js" defer></script-->
+  </head>
+  <body onload="setTimeout(addText, 1000, 10000)">   <!-- onload="addText(5) -->
+    <div>
+      <div class="navbar">
+        <ul>
+          <li><a onclick="document.getElementById('loginModal').style.display='block'"><i class="fa fa-lock" aria-hidden="true"></i>
+          <!--img src="./img/lock-alt.svg"></img-->
+           Login</a></li>
+        </ul>
+        <ul>
+          <!--<img id="ticker" class="flex-item-right" src="./img/ticker.svg" alt="sentiment ticker">-->
+          <li><a onclick="mailto:matt@literateai.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="flex-container">
+        <div class="titlebar">
+          <div id="title">
+            <h1>Literate.</h1><h1 class="h1-alt">ai</h1>
+          </div>
+          <div id="wiggles" class="slidecontainer">
+            <label for="selector">Sentiment</label>
+                                        <!-- max="5" step="1" defaultValue="1" -->
+            <input type="range" min="1" max=10000 defaultValue="10000" name="selector" class="slider" smooth=yes id="sentimentSelector">
+          </div>
+        </div>
+
+        <div id="text-container" class="letter">
+          <svg id="theSVG" class='animated'>
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" />
+              </marker>
+            </defs>
+            <g id="arrow-container"></g>
+          </svg>
+          <div class="paragraph">
+            <div class="sentence">
+
+
+
+              <div class=baseWord id="text0"></div>
+              <div class=baseWord id="text1" ></div>
+              <div class=baseWord id="text1-1" ></div>
+              <div class=baseWord id="losenge1"></div>
+              <div class=baseWord id="text1-2"></div>
+              <div class=baseWord id="text1-3"></div>
+              <div class=baseWord id="text1-4"></div>
+              <div class=baseWord id="losenge2"></div>
+              <div class=baseWord id="text2"></div>
+              <div class=baseWord id="text2-1"></div>
+              <div class=baseWord id="text2-2"></div>
+              <div class=baseWord id="text2-3"></div>
+              <div class=baseWord id="text2-4"></div>
+
+              <div class=baseWord id="text2-5"></div>
+              <div class=baseWord id="text3"></div>
+              <div class=baseWord id="text3-1"></div>
+              <div class=baseWord id="text3-2"></div>
+              <div class=baseWord id="text3-3"></div>
+              <div class=baseWord id="losenge3"></div>
+              <div class=baseWord id="text4"></div>
+              <div class=baseWord id="text4-1"></div>
+              <div class=baseWord id="text4-2"></div>
+              <div class=baseWord id="text4-3"></div>
+              <div class=baseWord id="text4-4"></div>
+              <div class=baseWord id="text4-5"></div>
+              <div class=baseWord id="text4-6"></div>
+              <div class=baseWord id="text4-7"></div>
+              <div class=baseWord id="text4-8"></div>
+              <div class=baseWord id="text5"></div>
+              <div class=baseWord id="text5-1"></div>
+              <div class=baseWord id="text5-2"></div>
+              <div class=baseWord id="text5-3"></div>
+              <div class=baseWord id="text5-4"></div>
+              <div class=baseWord id="text5-5"></div>
+            </div>
+
+
+            <div class="sentence">
+              <div class=baseWord id="losenge5"></div>
+              <div class=baseWord id="text6"></div>
+              <div class=baseWord id="text6-1"></div>
+              <div class=baseWord id="text6-2"></div>
+              <div class=baseWord id="text6-3"></div>
+              <div class=baseWord id="text6-4"></div>
+              <div class=baseWord id="text6-5"></div>
+              <div class=baseWord id="text6-6"></div>
+              <div class=baseWord id="text6-7"></div>
+              <div class=baseWord id="text6-8"></div>
+              <div class=baseWord id="text6-9"></div>
+              <div class=baseWord id="text6-10"></div>
+              <div class=baseWord id="text6-11"></div>
+              <div class=baseWord id="text6-12"></div>
+              <div class=baseWord id="text6-13"></div>
+              <div class=baseWord id="text7"></div>
+              <div class=baseWord id="text7-1"></div>
+              <div class=baseWord id="text7-2"></div>
+              <div class=baseWord id="text7-3"></div>
+              <div class=baseWord id="text7-4"></div>
+              <div class=baseWord id="text7-5"></div>
+              <div class=baseWord id="text7-6"></div>
+              <div class=baseWord id="losenge6"></div>
+              <div class=baseWord id="text8"></div>
+              <div class=baseWord id="text8-1"></div>
+              <div class=baseWord id="text8-2"></div>
+              <div class=baseWord id="text8-3"></div>
+              <div class=baseWord id="text8-4"></div>
+            </div>
+
+            <div class="sentence">
+              <div class=baseWord id="text8-5"></div>
+              <div class=baseWord id="text8-6"></div>
+              <div class=baseWord id="losenge7"></div>
+              <div class=baseWord id="text9"></div>
+            </div>
+              <div class=baseWord id="text10"></div>
+
+
+            <div class="footer">
+              work is for robots&#8482;|2021
+            </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- modal login form -->
+      <div id="loginModal" class="modal">
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Close Modal">×</span>
+            </div>
+
+            <div class="container">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="container">
+                <button type="button" onclick="document.getElementById('loginModal').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="mailto:info@literat.ai">Forgot password?</a></span>
+            </div>
+        </form>
+      </div>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+  </html>
